@@ -1,0 +1,29 @@
+use python/meterpreter_reverse_tcp
+Stopping all jobs...
+[4mmsf6[0m post([1m[31mtest/unix[0m) [0m> irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:/tmp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240125-2949-4bfn8mtxt
+[4mmsf6[0m payload([1m[31mpython/meterpreter_reverse_tcp[0m) [0m> generate -o /tmp/child-process-rb-python-meterpreter-reverse-tcp20240125-2949-2fgwxk.py -f raw AutoVerifySessionTimeout=30 lport=6010 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/tmp/pythonmeterpreter_reverse_tcp_debug_log20240125-2949-pm5hpwtxt MeterpreterTryToFork=false PythonMeterpreterDebug=true
+[4mmsf6[0m payload([1m[31mpython/meterpreter_reverse_tcp[0m) [0m> SessionTlvLogging => file:/tmp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240125-2949-4bfn8mtxt
+[4mmsf6[0m payload([1m[31mpython/meterpreter_reverse_tcp[0m) [0m> [*] Writing 24920 bytes to /tmp/child-process-rb-python-meterpreter-reverse-tcp20240125-2949-2fgwxk.py...
+[4mmsf6[0m payload([1m[31mpython/meterpreter_reverse_tcp[0m) [0m> to_handler
+[*] Payload Handler Started as Job 9
+[4mmsf6[0m payload([1m[31mpython/meterpreter_reverse_tcp[0m) [0m> 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6010 
+[*] Meterpreter session 10 opened (127.0.0.1:6010 -> 127.0.0.1:40654) at 2024-01-25 19:34:22 +0000
+use test/railgun_reverse_lookups
+[4mmsf6[0m post([1m[31mtest/railgun_reverse_lookups[0m) [0m> run session=10 AddEntropy=true Verbose=true
+[*] Running against session 10
+[*] Session type is meterpreter and platform is linux
+[*] SKIPPED: def test_osx_static (session platform is not osx)
+[+] should return a constant name given a const and a filter
+[*] SKIPPED: def test_windows_static (session platform is not windows)
+[*] SKIPPED: def test_windows_datastore (session platform is not windows)
+[*] Testing complete in 0.0 seconds
+[*] Passed: 4; Failed: 0; Skipped: 3
+[*] Post module execution completed
+sessions -K
+[4mmsf6[0m post([1m[31mtest/railgun_reverse_lookups[0m) [0m> jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 10 closed.
+[4mmsf6[0m post([1m[31mtest/railgun_reverse_lookups[0m) [0m> 

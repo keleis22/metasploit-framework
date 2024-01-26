@@ -1,0 +1,36 @@
+Final status:
+Process still alive after running test suite
+stdout and stderr:
+DEBUG:root:[*] running method core_negotiate_tlv_encryption
+DEBUG:root:[*] Negotiating TLV encryption
+DEBUG:root:[*] RSA key: 30820122300d06092a864886f70d01010105000382010f003082010a0282010100bfbcfc56c54b82b374adcc811a769ed01677fc1071c559d7113b6c6e3af27ee0e72b84853bed05c56779f9b54bd2bee56a2bc5c713c48012efd24bd395dab206b05f5b2f7361b9c5cb0f732410c2e03964efbc6284f156aeb60bce538a14ad3fedf3e3924c75eb73817434aaa1e2404c26667aef29121433da6782ff31b78a2b48ee8d401933d076fa4571e5b09e118a012c21c4849bf924e6d9c89eac4137d4a267c0bcfbef3777e7875781962bbd009dbc4256fc4d95b61453c1fbeb1c9b58333eda285a139c0b7d06601d780dca812c77d86ca83c9e42149058f75112d97ba87f85d790328571807393e0e8e311475b161c64817245d56e98c9267433f23f0203010001
+DEBUG:root:[*] AES key: 0x5fdd75b13dd359380c463d5d6faa60a6d18fbb72b76dd1449ea2e3b5f7a6ffe7
+DEBUG:root:[*] Encrypted AES key: 0x330cf61a16af7a3109eb2f35cbc6246d81910a2eb163f3403b656b1e0d652494f28f3908b5190a9c6197c0c3a76d75d982f38e3c1c7eaa28487acae366fd14f6342b29a1158d9d37d913eb9941415387cd7716f4390668125044fbcef17035308a37fb64d75009fb251038fe3a0a149af40f37b1f2f51b0d1e1705158fb789c95ef110f00cdd690efafdf2e381360704d35c53926532b623921049bdb0dfce4d5bbe6f9bb6266958b4c0c78ee48fbf310953ff526e311363151523085c3ad1e3a45ab723ccd3f691b7e6b0c162d9f952a279047250403c8f94a7a388a82ea4e1377ba958208e28961a901d0bfdda2beca3af1d28c5691ba1cf6f00cd15693cee
+DEBUG:root:[*] TLV encryption sorted
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_set_session_guid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_enumextcmd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_enumextcmd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_loadlib
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_fs_getwd
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_config_getuid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_sys_config_sysinfo
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_set_uuid
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_net_config_get_interfaces
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method stdapi_net_config_get_routes
+DEBUG:root:[*] sending response packet
+DEBUG:root:[*] running method core_enumextcmd
+DEBUG:root:[*] failed to lookup id for command string: channel_open_stdapi_fs_file
+DEBUG:root:[*] failed to lookup id for command string: channel_open_stdapi_net_tcp_client
+DEBUG:root:[*] failed to lookup id for command string: channel_open_stdapi_net_tcp_server
+DEBUG:root:[*] failed to lookup id for command string: channel_open_stdapi_net_udp_client
+DEBUG:root:[*] sending response packet

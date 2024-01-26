@@ -1,0 +1,44 @@
+D:/a/metasploit-framework/metasploit-framework/vendor/bundle/ruby/3.0.0/gems/rex-core-0.1.31/lib/rex/compat.rb:381: warning: Win32API is deprecated after Ruby 1.9.1; use fiddle directly instead
+Overriding user environment variable 'OPENSSL_CONF' to enable legacy functions.
+msf6 > loadpath test/modules
+Loaded 39 modules:
+    14 auxiliary modules
+    13 exploit modules
+    12 post modules
+msf6 > use python/meterpreter_reverse_tcp
+msf6 payload(python/meterpreter_reverse_tcp) > irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:D:/a/_temp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240125-6460-6b7outtxt
+msf6 payload(python/meterpreter_reverse_tcp) > SessionTlvLogging => file:D:/a/_temp/pythonmeterpreter_reverse_tcp_session_tlv_logging20240125-6460-6b7outtxt
+msf6 payload(python/meterpreter_reverse_tcp) > generate -o D:/a/_temp/child-process-rb-python-meterpreter-reverse-tcp20240125-6460-zbsdyd.py -f raw AutoVerifySessionTimeout=30 lport=6001 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:D:/a/_temp/pythonmeterpreter_reverse_tcp_debug_log20240125-6460-37dxtvtxt MeterpreterTryToFork=false PythonMeterpreterDebug=true
+[*] Writing 24928 bytes to D:/a/_temp/child-process-rb-python-meterpreter-reverse-tcp20240125-6460-zbsdyd.py...
+msf6 payload(python/meterpreter_reverse_tcp) > to_handler
+[*] Payload Handler Started as Job 0
+msf6 payload(python/meterpreter_reverse_tcp) > 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6001 
+[*] Meterpreter session 1 opened (127.0.0.1:6001 -> 127.0.0.1:50021) at 2024-01-25 19:36:42 +0000
+use test/cmd_exec
+msf6 post(test/cmd_exec) > run session=1 AddEntropy=true Verbose=true
+[!] SESSION may not be compatible with this module:
+[!]  * missing Meterpreter features: stdapi_fs_chmod
+[*] Running against session 1
+[*] Session type is meterpreter and platform is windows
+[*] Starting cmd_exec tests
+[*] [should return the result of echo] meterpreter?
+[+] should return the result of echo
+[*] Session does not support sleep, skipping sleep tests
+[*] Finished cmd_exec tests
+[*] Starting cmd_exec quote tests
+[+] should return the result of echo with single quotes
+[+] should return the result of echo with double quotes
+[*] Starting cmd_exec stderr tests
+[+] should return the stderr output
+[*] Testing complete in 0.93 seconds
+[*] Passed: 4; Failed: 0; Skipped: 0
+[*] Post module execution completed
+msf6 post(test/cmd_exec) > sessions -K
+jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 1 closed.
+msf6 post(test/cmd_exec) > Stopping all jobs...
+msf6 post(test/cmd_exec) > 

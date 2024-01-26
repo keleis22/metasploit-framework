@@ -1,0 +1,79 @@
+[*] running method core_negotiate_tlv_encryption
+[*] Negotiating TLV encryption
+[*] RSA key: 30820122300d06092a864886f70d01010105000382010f003082010a0282010100b863ef9db753cc24051373b935cd760399f5adc3bec8dfa45c2d82122233a4d1215e4ed8afe0d53e57690e40227bba6013b743d4d6b3842b1ce429547aecd0e20336e7eb35a77dfa5901713091326cde1202454071824d6eb62c9129deefd24491166498189734535ba97f60ab0e3c2d18c7324f884ace1a1c64e2dee3700ada979782040efff78e8bf0879f571b3321a80ed3218189c33e21f2c45a4a2e5d71fae9b5b4e2e342e82f714e4281c0dfab99d1eaf467c9620cd1af24f537f3e56d7d054736ce6d4a33451a8c967428aae31a9606f1d2e71b09acfcca9094d6e09201e76d8f24ca8c84c07ab8db608ce331148dd6fbee469b12f9fcccb38f74d1d70203010001
+[*] AES key: 0x920d4c83edce8fc1a39b50ab1998343c42d187c5f9680db96673881be637c3e2
+[*] Encrypted AES key: 0x56bf90736dd3d8d2f69e95a67b1a2c425957aefe44cbd9f2b020d361d634f905dc4eaad43e7c04297ec8206e8af7c112cd035ddcdc64bcbcd37690ebcf16566ec5af932b30c2bef65a33c2a329c47f4f06e7167d0244b44af8929d5e087325c6b778d177a12e3807a0fda48d24162a9f3d100c611548d73108ef059f0b0a3f14b2943727afb9c7e0b17da768978dbfb377e3b0c3cff846069668a74720c6b6a305c46c93053adc2ed52ebe87a7ddaaaa4f3fddd1700d736ed25d9b699d5653b574a74074488fc3f41225e837f4ccb98214ec74199c8a0576b37452735758f5e148dac8e05b2a051f11a99dcb3875504e3450905a935802147dc747e239e619b4
+[*] TLV encryption sorted
+[*] sending response packet
+[*] running method core_set_session_guid
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_enumextcmd
+[*] sending response packet
+[*] running method core_loadlib
+[*] sending response packet
+[*] running method stdapi_fs_getwd
+[*] sending response packet
+[*] running method stdapi_sys_config_getuid
+[*] sending response packet
+[*] running method stdapi_sys_config_sysinfo
+[*] sending response packet
+[*] running method core_set_uuid
+[*] sending response packet
+[*] running method stdapi_net_config_get_interfaces
+[*] sending response packet
+[*] running method stdapi_net_config_get_routes
+[*] sending response packet
+[*] running method stdapi_sys_process_execute
+[*] starting process: ['cmd.exe', '/c', 'echo', 'FyLv']
+[*] added process id: 944, handle: 728
+[*] added channel id: 1 type: MeterpreterProcess
+[*] sending response packet
+[*] running method core_channel_read
+[*] sending response packet
+[*] running method core_channel_read
+[-] method core_channel_read resulted in error: #1
+[*] sending response packet
+[*] running method stdapi_sys_process_close
+[*] closed and removed process handle: 728
+[*] sending response packet
+[*] running method stdapi_sys_process_execute
+[*] starting process: ['cmd.exe', '/c', 'echo', 'YwHV']
+[*] added process id: 2672, handle: 780
+[*] added channel id: 2 type: MeterpreterProcess
+[*] sending response packet
+[*] running method core_channel_read
+[*] sending response packet
+[*] running method core_channel_read
+[-] method core_channel_read resulted in error: #1
+[*] sending response packet
+[*] running method stdapi_sys_process_close
+[*] closed and removed process handle: 780
+[*] sending response packet
+[*] running method stdapi_sys_process_execute
+[*] starting process: ['cmd.exe', '/c', 'echo', 'oxxI']
+[*] added process id: 6888, handle: 676
+[*] added channel id: 3 type: MeterpreterProcess
+[*] sending response packet
+[*] running method core_channel_read
+[*] sending response packet
+[*] running method core_channel_read
+[-] method core_channel_read resulted in error: #1
+[*] sending response packet
+[*] running method stdapi_sys_process_close
+[*] closed and removed process handle: 676
+[*] sending response packet
+[*] running method stdapi_sys_process_execute
+[*] starting process: ['cmd.exe', '/c', 'echo', 'FdBn', '1>&2']
+[*] added process id: 2868, handle: 656
+[*] added channel id: 4 type: MeterpreterProcess
+[*] sending response packet
+[*] running method core_channel_read
+[*] sending response packet
+[*] running method core_channel_read
+[-] method core_channel_read resulted in error: #1
+[*] sending response packet
+[*] running method stdapi_sys_process_close
+[*] closed and removed process handle: 656
+[*] sending response packet

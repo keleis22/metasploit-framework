@@ -1,0 +1,1362 @@
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=16 command=core_negotiate_tlv_encryption>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="99825385580834936729844493982890">
+  #<Rex::Post::Meterpreter::Tlv type=RSA_PUB_KEY     meta=RAW        value="0\x82\x01\"0\r\x06\t*\x86H\x86\xF7\r\x01\x01\x01\ ...">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=16 command=core_negotiate_tlv_encryption>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=SYM_KEY_TYPE    meta=INT        value=1>
+  #<Rex::Post::Meterpreter::Tlv type=ENC_SYM_KEY     meta=RAW        value="\x1C/!G\xE7\xFB\x82\xF2X\x11\xB4\x84\xED\x05\xAB5 ...">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="99825385580834936729844493982890">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=21 command=core_set_session_guid>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="40971205368375945963702276811622">
+  #<Rex::Post::Meterpreter::Tlv type=SESSION_GUID    meta=RAW        value="\xA8_\xE3d\x03nA\x82\x99\xD7\x14\xA6\x04\xD9\x1Fk ...">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=21 command=core_set_session_guid>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="40971205368375945963702276811622">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="46563422279241973885739645604857">
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=LENGTH          meta=INT        value=1000>
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1  command=core_channel_close>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=2  command=core_channel_eof>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=3  command=core_channel_interact>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=4  command=core_channel_open>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=5  command=core_channel_read>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=6  command=core_channel_seek>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=7  command=core_channel_tell>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=8  command=core_channel_write>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=11 command=core_get_session_guid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=12 command=core_loadlib>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=13 command=core_machine_id>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=15 command=core_native_arch>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=16 command=core_negotiate_tlv_encryption>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=17 command=core_patch_url>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=21 command=core_set_session_guid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=22 command=core_set_uuid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=23 command=core_shutdown>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=24 command=core_transport_add>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=25 command=core_transport_change>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=27 command=core_transport_list>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=28 command=core_transport_next>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=29 command=core_transport_prev>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=30 command=core_transport_remove>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=32 command=core_transport_set_timeouts>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=33 command=core_transport_sleep>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="46563422279241973885739645604857">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="08282467409316890214505237650203">
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1000>
+  #<Rex::Post::Meterpreter::Tlv type=LENGTH          meta=INT        value=1000>
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="08282467409316890214505237650203">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=12 command=core_loadlib>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="66837469950351832964247879011294">
+  #<Rex::Post::Meterpreter::Tlv type=DATA            meta=RAW        value="import fnmatch\nimport functools\nimport getpass\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=LIBRARY_PATH    meta=STRING     value="ext45983.py">
+  #<Rex::Post::Meterpreter::Tlv type=FLAGS           meta=INT        value=2>
+  #<Rex::Post::Meterpreter::Tlv type=TARGET_PATH     meta=STRING     value="/tmp/ext45983.py">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=12 command=core_loadlib>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1052 command=stdapi_sys_config_getenv>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1054 command=stdapi_sys_config_getsid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1055 command=stdapi_sys_config_getuid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1053 command=stdapi_sys_config_getprivs>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1056 command=stdapi_sys_config_localtime>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1059 command=stdapi_sys_config_sysinfo>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1067 command=stdapi_sys_process_attach>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1068 command=stdapi_sys_process_close>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1069 command=stdapi_sys_process_execute>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1070 command=stdapi_sys_process_get_info>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1072 command=stdapi_sys_process_getpid>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1077 command=stdapi_sys_process_kill>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1071 command=stdapi_sys_process_get_processes>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1078 command=stdapi_sys_process_memory_allocate>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1080 command=stdapi_sys_process_memory_lock>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1084 command=stdapi_sys_process_memory_unlock>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1083 command=stdapi_sys_process_memory_read>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1085 command=stdapi_sys_process_memory_write>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1081 command=stdapi_sys_process_memory_protect>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1082 command=stdapi_sys_process_memory_query>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1079 command=stdapi_sys_process_memory_free>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1066 command=stdapi_sys_power_exitwindows>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1064 command=stdapi_sys_eventlog_open>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1065 command=stdapi_sys_eventlog_read>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1060 command=stdapi_sys_eventlog_clear>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1062 command=stdapi_sys_eventlog_numrecords>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1063 command=stdapi_sys_eventlog_oldest>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1061 command=stdapi_sys_eventlog_close>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1001 command=stdapi_fs_chdir>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1003 command=stdapi_fs_delete_dir>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1004 command=stdapi_fs_delete_file>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1006 command=stdapi_fs_file_expand_path>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1007 command=stdapi_fs_file_move>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1005 command=stdapi_fs_file_copy>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1008 command=stdapi_fs_getwd>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1009 command=stdapi_fs_ls>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1010 command=stdapi_fs_md5>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1011 command=stdapi_fs_mkdir>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1013 command=stdapi_fs_search>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1014 command=stdapi_fs_separator>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1015 command=stdapi_fs_sha1>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1016 command=stdapi_fs_stat>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1012 command=stdapi_fs_mount_show>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1018 command=stdapi_net_config_get_arp_table>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1019 command=stdapi_net_config_get_interfaces>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1022 command=stdapi_net_config_get_routes>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1017 command=stdapi_net_config_add_route>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1023 command=stdapi_net_config_remove_route>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1021 command=stdapi_net_config_get_proxy>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1024 command=stdapi_net_resolve_host>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1025 command=stdapi_net_resolve_hosts>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1026 command=stdapi_net_socket_tcp_shutdown>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1029 command=stdapi_railgun_api_multi>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1030 command=stdapi_railgun_memread>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1031 command=stdapi_railgun_memwrite>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1033 command=stdapi_registry_close_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1034 command=stdapi_registry_create_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1035 command=stdapi_registry_delete_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1036 command=stdapi_registry_delete_value>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1037 command=stdapi_registry_enum_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1038 command=stdapi_registry_enum_key_direct>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1039 command=stdapi_registry_enum_value>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1040 command=stdapi_registry_enum_value_direct>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1041 command=stdapi_registry_load_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1032 command=stdapi_registry_check_key_exists>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1042 command=stdapi_registry_open_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1043 command=stdapi_registry_open_remote_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1044 command=stdapi_registry_query_class>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1045 command=stdapi_registry_query_value>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1046 command=stdapi_registry_query_value_direct>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1047 command=stdapi_registry_set_value>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1048 command=stdapi_registry_set_value_direct>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1049 command=stdapi_registry_unload_key>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1102 command=stdapi_ui_get_idle_time>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1096 command=stdapi_ui_desktop_enum>
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=1097 command=stdapi_ui_desktop_get>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="66837469950351832964247879011294">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1008 command=stdapi_fs_getwd>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="75577541086967652413248382587670">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1008 command=stdapi_fs_getwd>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=DIRECTORY_PATH  meta=STRING     value="D:/a/metasploit-framework/metasploit-framework">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="75577541086967652413248382587670">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1055 command=stdapi_sys_config_getuid>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="87485663037936785402610120412693">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1055 command=stdapi_sys_config_getuid>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=USER_NAME       meta=STRING     value="fv-az533-254\\runneradmin">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="87485663037936785402610120412693">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1059 command=stdapi_sys_config_sysinfo>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="07888385335823506245099026902696">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1059 command=stdapi_sys_config_sysinfo>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=COMPUTER_NAME   meta=STRING     value="fv-az533-254">
+  #<Rex::Post::Meterpreter::Tlv type=LANG_SYSTEM     meta=STRING     value="en_US">
+  #<Rex::Post::Meterpreter::Tlv type=OS_NAME         meta=STRING     value="Windows 2016 (Build 17763)">
+  #<Rex::Post::Meterpreter::Tlv type=ARCHITECTURE    meta=STRING     value="x64">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="07888385335823506245099026902696">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=22 command=core_set_uuid>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="25102712561626076077246380853452">
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xFA\xF2\x9ETC\xB0">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=22 command=core_set_uuid>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="25102712561626076077246380853452">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1019 command=stdapi_net_config_get_interfaces>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="04472481339827978125890479405149">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1019 command=stdapi_net_config_get_interfaces>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_INTERFACE tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=MAC_NAME        meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=MAC_ADDRESS     meta=RAW        value="\x00\r:\x12\xFC\x14">
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_MTU   meta=INT        value=1500>
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_INDEX meta=INT        value=13>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=64>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\n\x01\x00\x0E">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=16>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_INTERFACE tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=MAC_NAME        meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=MAC_ADDRESS     meta=RAW        value="\x00\x00\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_MTU   meta=INT        value=4294967295>
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_INDEX meta=INT        value=1>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=128>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\x7F\x00\x00\x01">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=8>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_INTERFACE tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=MAC_NAME        meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=MAC_ADDRESS     meta=RAW        value="\x00\x15]&\xD2\x87">
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_MTU   meta=INT        value=1500>
+  #<Rex::Post::Meterpreter::Tlv type=INTERFACE_INDEX meta=INT        value=9>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=64>
+  #<Rex::Post::Meterpreter::Tlv type=IP              meta=RAW        value="\xAC\x17P\x01">
+  #<Rex::Post::Meterpreter::Tlv type=IP_PREFIX       meta=INT        value=20>
+]>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="04472481339827978125890479405149">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1022 command=stdapi_net_config_get_routes>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="62124744615330439627241541337620">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1022 command=stdapi_net_config_get_routes>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\n\x01\x00\x01">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=10>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\n\x01\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\n\x01\x00\x0E">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\n\x01\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\x7F\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\x7F\x00\x00\x01">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\x7F\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xA8?\x81\x10">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\n\x01\x00\x01">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=11>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xA9\xFE\xA9\xFE">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\n\x01\x00\x01">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=11>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xAC\x17P\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xF0\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xAC\x17P\x01">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xAC\x17_\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xE0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xF0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xE0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xF0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xE0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xF0\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00Gx\x8AK\x1D\x9B\x ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFE\x80\x00\x00\x00\x00\x00\x00\xADtaa@\xCA\xA0\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Software Loopback Interface 1">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=331>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Microsoft Hyper-V Network Adapter #2">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=266>
+]>
+  #<Rex::Post::Meterpreter::GroupTlv type=NETWORK_ROUTE   tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=SUBNET          meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=NETMASK         meta=RAW        value="\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=GATEWAY         meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="Hyper-V Virtual Ethernet Adapter">
+  #<Rex::Post::Meterpreter::Tlv type=ROUTE_METRIC    meta=INT        value=5256>
+]>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="62124744615330439627241541337620">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="23397268471399811715623085880488">
+  #<Rex::Post::Meterpreter::Tlv type=UINT            meta=INT        value=3000>
+  #<Rex::Post::Meterpreter::Tlv type=LENGTH          meta=INT        value=1000>
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=10 command=core_enumextcmd>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="23397268471399811715623085880488">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=15 command=core_native_arch>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="61286219214971017546001633949374">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=15 command=core_native_arch>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=STRING          meta=STRING     value="x64">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="61286219214971017546001633949374">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="80263376767438663288987436673126">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217022624>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="80263376767438663288987436673126">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="58832148238168469040817824616544">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xA0,\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="winmgmt\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="58832148238168469040817824616544">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="04304478355289803434394682191750">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xA0,\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="04304478355289803434394682191750">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="86550911944262425485428640342309">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023920>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="86550911944262425485428640342309">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="10336141631498383784408943749598">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xB01\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="acpMRB\x00\x00acpMRB\x00\x00C:\\WINDOWS\\system32 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CreateServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="10336141631498383784408943749598">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="40815875836307160897058049133822">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="40815875836307160897058049133822">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="83052016078442243468347130294277">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xB01\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="83052016078442243468347130294277">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="39266284757585586526816257297471">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023584>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="39266284757585586526816257297471">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="77957195236816192813816835813784">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00`0\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="acpMRB\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="77957195236816192813816835813784">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="87059545233095237364477184668405">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00`0\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="87059545233095237364477184668405">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="94338454462873295680589037870415">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023776>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="94338454462873295680589037870415">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="83790209956435823508945076454186">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00 1\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="aBfZhZ\x00\x00aBfZhZ\x00\x00C:\\WINDOWS\\system32 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CreateServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="83790209956435823508945076454186">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="26065681798123814402446614826532">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="26065681798123814402446614826532">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="98972896744454253922435526002646">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00 1\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="98972896744454253922435526002646">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="29422235449511443823967244057463">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023872>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="29422235449511443823967244057463">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="27644206417689252622514840319616">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x801\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="W32Time\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="27644206417689252622514840319616">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="19931346971340255429595848358428">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x801\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="19931346971340255429595848358428">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="96123512862639265743502219488454">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023152>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="96123512862639265743502219488454">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="43145885635548977432435495599990">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xB0.\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="testes\x00\x00Cool display name\x00\x00\x00\x00\x ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CreateServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="43145885635548977432435495599990">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57311082709633202361183673835829">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57311082709633202361183673835829">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="97405448204940122816100647227557">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xB0.\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="97405448204940122816100647227557">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57041690431103999285698740186859">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217022768>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57041690431103999285698740186859">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="36221337330234159194982405513856">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x000-\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="testes\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="36221337330234159194982405513856">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="54857773866052373320319098922776">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x000-\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="54857773866052373320319098922776">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="05822237767859491438285453156514">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217022672>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="05822237767859491438285453156514">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="97568153387171135850005774759794">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xD0,\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="gpsvc\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="97568153387171135850005774759794">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="65644293264477566315926949415077">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xD0,\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="65644293264477566315926949415077">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="60820978044182716140354631065644">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023824>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="60820978044182716140354631065644">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="95157260198185559548817998278603">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00P1\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="SWIPA\x00\x00\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="95157260198185559548817998278603">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="90482705086726239715892976550077">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00P1\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="90482705086726239715892976550077">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="76264883420073118243495072717255">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217023008>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="76264883420073118243495072717255">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="88052699204603053086895326678543">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00 .\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="W32Time\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="88052699204603053086895326678543">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57829952437978953062007434343416">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00 .\xFE\x11\x00\x0 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="57829952437978953062007434343416">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="27924547916779975184886467424064">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\ ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenSCManagerA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="The operation completed successfully.">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=1950217022912>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="27924547916779975184886467424064">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="02471903554431886883653624105682">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xC0-\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="W32Time\x00">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="OpenServiceA">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="02471903554431886883653624105682">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="78764159896440913214049531954117">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(RAILGUN_SIZE_OUT,UNHOOK_ERROR_CODE,WINPMEM_ERROR_CODE) meta=INT        value=0>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_STACKBLOB meta=RAW        value="\x00\x00\x00\x00\x00\x00\x00\x00\xC0-\xFE\x11\x00 ...">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(PYTHON_CODE,RAILGUN_BUFFERBLOB_IN) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(LANATTACKS_RAW,RAILGUN_BUFFERBLOB_INOUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_SERVERNAME,RAILGUN_LIBNAME) meta=STRING     value="advapi32">
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(INCOGNITO_GROUPNAME,RAILGUN_FUNCNAME,SNIFFER_ADDITIONAL_FILTER) meta=STRING     value="CloseServiceHandle">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_CALLCONV meta=STRING     value="stdcall">
+]>
+
+RECV: #<Rex::Post::Meterpreter::Packet type=Response        tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=1028 command=stdapi_railgun_api>
+  #<Rex::Post::Meterpreter::Tlv type=UUID            meta=RAW        value="\xBDMq\x0EB\xC7\x06@\xFB\xE6\xEE\xF2\x9ETC\xB0">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_ERR meta=INT        value=6>
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_MSG meta=STRING     value="FormatMessage failed to retrieve the error for va ...">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_RET meta=QWORD      value=0>
+  #<Rex::Post::Meterpreter::Tlv type=oneOf(POWERSHELL_ASSEMBLY,RAILGUN_BACK_BUFFERBLOB_OUT) meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=RAILGUN_BACK_BUFFERBLOB_INOUT meta=RAW        value="">
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="78764159896440913214049531954117">
+  #<Rex::Post::Meterpreter::Tlv type=RESULT          meta=INT        value=0>
+]>
+
+SEND: #<Rex::Post::Meterpreter::Packet type=Request         tlvs=[
+  #<Rex::Post::Meterpreter::Tlv type=COMMAND_ID      meta=INT        value=23 command=core_shutdown>
+  #<Rex::Post::Meterpreter::Tlv type=REQUEST_ID      meta=STRING     value="39655817869787857044556960884062">
+]>
